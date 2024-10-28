@@ -1,0 +1,86 @@
+if game.PlaceId == 2214661900 then
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "Gul hub | Survive-in-Area-51 Beta v.1", HidePremium = false, Intro = false,IntroText = "Gul hub!", SaveConfig = true, ConfigFolder = "Gul hub"})
+	
+	--Main
+	
+    local Main = Window:MakeTab({
+	Name = "Main",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+    
+    Main:AddButton({
+	Name = "Spawn",
+	Callback = function()
+      		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(630.1624145507812, 1148.4998779296875, 749.1951293945312) --Spawn
+  	end    
+})
+	
+	Main:AddButton({
+	Name = "Shop",
+	Callback = function()
+      		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(589.678955078125, 1150.9998779296875, 664.4775390625) --Shop
+  	end    
+})
+	
+ Main:AddButton({
+	Name = "Crafting Room",
+	Callback = function()
+      		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(953.6991577148438, 1059.9998779296875, 714.219482421875) --Crafting Room
+  	end    
+})
+	
+	Main:AddButton({
+	Name = "Portal",
+	Callback = function()
+      		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-108.6634521484375, 981.9999389648438, 797.7275390625) --Portal
+  	end    
+})
+	
+	Main:AddButton({
+	Name = "Metro Station",
+	Callback = function()
+      		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-492.34515380859375, 916.1000366210938, -57.4563102722168) --Metro Station
+  	end    
+})
+	
+	--Gun
+	
+    local Gun = Window:MakeTab({
+	Name = "Gun Play obby",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+	
+	Gun:AddButton({
+	Name = "ice crossbow",
+	Callback = function()
+      		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(242.7141876220703, 699.3610229492188, 943.5986328125) --ice crossbow
+  	end    
+})
+	
+	Gun:AddButton({
+	Name = "Vulcan",
+	Callback = function()
+      		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-600.4874877929688, 957.235595703125, 155.46588134765625) --Vulcan
+  	end    
+})
+	
+	Gun:AddButton({
+	Name = "Red Missile Launcher",
+	Callback = function()
+      		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-353.5192565917969, 1072.9974365234375, 411.0243835449219) --Red Missile Launcher
+  	end    
+})
+	
+	Gun:AddButton({
+	Name = "LXW",
+	Callback = function()
+      		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-15.062729835510254, 860.9974975585938, -46.453834533691406) --LXW
+  	end    
+})
+	
+    
+    end
+    OrionLib:Init()
